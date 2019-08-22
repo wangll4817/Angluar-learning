@@ -1,0 +1,45 @@
+
+
+
+Typescript类的用法
+class Person{
+    name: string;
+    age: number;
+    //constructor就是类的构造函数
+    //当你new Person的时候，就会自动调用constructor
+    constructor(name:string, age: number){
+        //我们这是实际上是在动态的为实例添加成员
+        //Typescript要求类的成员应该先被定义出来并确定类型
+        this.name = name
+        this.age = age
+    }
+
+    //实例方法
+    sayHello(): void{
+        console.log(this.name, this.age)
+    }
+}
+let p1 = new Person('张三',18)
+p1.sayHello()
+
+
+Typescript类的继承
+class Person{
+    name: string;
+    age: number;
+    constructor(name: string, age: number){
+        this.name = name
+        this.age = age
+    }
+        eat(){
+            console.log('吃饭')
+        } 
+}
+
+class Student extends Person{
+    constructor(name: string, age: number){
+        //super()就是父类的构造函数
+        super(name, age)
+    }
+}
+new Student('张三', 18)
