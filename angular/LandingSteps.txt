@@ -1,0 +1,4 @@
+1.signin.component.ts配置HttpClient
+2.在signin.component.ts中constructor方法里配置HttpClient
+3.在signin()方法里写逻辑
+4.登陆成功需要跳转到首页，需要配置路由Router；在signin.component.ts中constructor方法里配置Router
