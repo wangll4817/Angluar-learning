@@ -1,0 +1,6 @@
+1.在app-routing.module.ts中配置动态路径
+2.在contact-list.component.html中配置编辑的动态路径
+3.导入Router, ActivatedRoute
+4.创建getContactsById方法，导入HttpClient
+5.完成getContactsById方法.
+............
