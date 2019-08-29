@@ -8,11 +8,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 //根组件
 import { AppComponent } from './app.component';
+import { NewsComponent } from './componemt/news/news.component';
 
 //装饰器，接受一个元数据对象，告诉Angular如何编译和启动应用
 @NgModule({
   declarations: [         //配置当前项目运行的组件
-    AppComponent
+    AppComponent, NewsComponent
   ],
   imports: [    //依赖模块
     BrowserModule,
